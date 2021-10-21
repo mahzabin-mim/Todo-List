@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="header">
+            To-do List
+        </h1>
+
+        <form class="input-area box">
+            <label for="text-box">Add New Task:</label>
+            <input type="text" class="text-box" placeholder="Task Name...">
+            <input type="submit" value="Add Task" class="add-task-btn btn">
+        </form>
+
+
+        <div class="row">
+            <div class="todo-incomplete box">
+                <h2 class="todo-incomplete__title">Incomplete Tasks</h2>
+                <ul class="todo-incomplete__list list"></ul>
+            </div>
+    
+    
+            <div class="todo-complete box">
+                <h2 class="todo-complete__title">Completed Tasks</h2>
+                <ul class="todo-complete__list"></ul>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

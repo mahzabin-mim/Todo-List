@@ -1,0 +1,175 @@
+:root {
+    --main-color: rgb(255, 147, 147);
+    --secondary-color: 2px solid rgb(184, 19, 107);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.3125rem;
+    color: rgb(44, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.616), rgba(255, 255, 255, 0.65)),
+    url('https://assets.hongkiat.com/uploads/seemless-icon-patterns/1-seamless-icon-pattern-download.jpg');
+}
+
+h1, h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: rgb(77, 64, 64);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2.5px solid lightgrey;
+}
+
+ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0rem 2rem;
+    line-height: 2;
+
+    text-align: center;
+}
+
+ul li {
+    border-bottom: 1px solid lightgray;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    transition: opacity 0.3s;
+}
+
+ul li label {
+    flex-grow: 1;
+    margin-left: 0.5rem;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    background: var(--main-color);
+    border: var(--secondary-color);
+    box-shadow: 2px 1px 9px grey;
+}
+
+.box {
+    background: white;
+    border: 2px solid rgb(184, 19, 107);
+    border-radius: 0.4rem;
+
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+
+.done-btn {
+    background: rgb(21, 180, 21);
+    color: white;
+}
+
+.delete-btn {
+    background: rgb(253, 97, 24);
+    color: white;
+}
+
+
+
+.input-area {
+    padding: 0.8rem 0;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    line-height: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+.text-box {
+    margin: 0 1rem;
+    font-size: 1.3125rem;
+    max-width: 100%;
+    padding: 0.25rem;
+}
+
+.add-task-btn {
+    padding: 0.4rem;
+    cursor: pointer;
+    background: rgb(235, 15, 107);
+    color: white;
+}
+
+
+
+.message {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    text-align: center;
+}
+
+
+@media (min-width: 650px) {
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .row .box {
+        width: 49%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+
+.fade {
+    opacity: 0;
+}
